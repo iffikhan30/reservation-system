@@ -10,7 +10,7 @@ class Rs_Formshortcode{
     public function reservaltion_system_contactform(){
         global $post;
             if(is_single()) {?>
-                <form id="reservationformid" method="post"></br>
+                <form class="rs-form" id="reservationformid" method="post"></br>
                     <?php
                 if (function_exists('wp_nonce_field')) {
                     wp_nonce_field('r_security_nonce', 'r_security_nonce');
